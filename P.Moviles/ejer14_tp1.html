@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<style>
+h1 {
+font-size: 14px;
+color: #000;
+font-family: 'Open Sans';
+}
+</style>
+</head>
+<body background="html.jpg">
+<h1>FORMULARIO.<h1>
+<br>
+<br>
+<form action="registrardatos.php"  method="post">
+
+<label for="nombre">Ingrese su nombre:</label>
+<input type="text" name="nombre" size="20" id="nombre">
+
+<br>
+<br>
+Contraseña:
+<input type="password" name="clave" size="15">
+e-mail:
+<input type="text" name="nombre" size="20">
+<br>
+<br>
+ <u> ¿Cuantos son dos y dos? </u><br> <br>
+<input name="respuesta1" type="checkbox" value="cuatro">3<br>
+<input name="respuesta2" type="checkbox" value="tres">4<br>
+<input name="respuesta3" type="checkbox" value="uno">5<br> <br>
+ <u> ¿Tienes Hijos? </u><br> <br>
+<input name="re1" type="radio" value="cuatro">si<br>
+<input name="re" type="radio" value="tres">no<br>
+<input name="re3" type="radio" value="uno">en camino<br><br>
+De que pais eres?
+<select name="pais">
+<option value=1> Argentina </option>
+<option value=1> Holanda </option>
+<option value=1> Otro</option>
+</select>
+<br>
+Color favorito:
+<select name="colores[]" size="4" multiple> 
+ <option value="1">Rojo</option>  
+ <option value="2">Verde</option>  
+ <option value="3">Azul</option>  </select>
+ <br>
+ <br>
+ COMIDA SANA:
+ <select name="articulo"> 
+ <optgroup label="Frutas">  
+ <option value="1">Naranjas</option>  
+ <option value="2">Manzanas</option> 
+ </optgroup> <optgroup label="Verduras">  
+ <option value="7">Lechuga</option>  
+ <option value="8">Acelga</option> 
+  <option value="9">Zapallo</option>
+  </optgroup>
+  </select>
+  <br>
+  <br>
+  <button type="submit">Enviar<img src="foto.jpg" alt="..." width="50px" height="50px"></button>
+ <br>
+  <br>
+Comentario:
+<br>
+<textarea name="comen" rows="5" cols="60"></textarea>
+<br>
+<input type="reset" value="borrar">
+<input type="submit" value="enviar">
+</form>  
+</body>
+</html>
